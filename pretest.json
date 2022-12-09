@@ -1,0 +1,75 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "When do we say that the process is the ready state?",
+      "answers": {
+        "a": "When the process is ready to be executed",
+        "b": "when process is unable to run until some task has been completed",
+        "c": "when process is using the CPU",
+        "d": "None of the mentioned"
+      },
+      "explanations": {
+        "a": "The process is run-able and residing in the main memory.",
+        "b": "Incorrect",
+        "c": "Incorrect",
+        "d": "Incorrect"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the full form of PCB?",
+      "answers": {
+        "a": "Process Control Block",
+        "b": "Process Central Block",
+        "c": "Pivot Central Block",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Correct",
+        "b": "Incorrect",
+        "c": "Incorrect",
+        "d": "Incorrect"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+    ,
+    {
+      "question": "When does preemption take place?",
+      "answers": {
+        "a": "When a quantum expires",
+        "b": "When a process issues an I/O request.",
+        "c": "When a process exits.",
+        "d": "All of the above."
+      },
+      "explanations": {
+        "a": "Preemption means the operating system moves a process from running state to ready state without the process requesting it .Preemption takes place when a process switches from the running state to the ready state due to timer interrupt (time slice or quantum), or when a process switches from the waiting state to the ready state due to the completion of I/O.",
+        "b": "Incorrect",
+        "c": "Incorrect",
+        "d": "Incorrect"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+    ,
+    {
+      "question": "What does an interupt do?",
+      "answers": {
+        "a": "Allow the CPU to notify devices that it needs attention",
+        "b": "Allow the devices to notify the device controller that they need attention",
+        "c": "Allow the devices to notify the CPU that they need attention",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "Incorrect",
+        "b": "Incorrect",
+        "c": "Incorrect",
+        "d": "The interrupt is a signal emitted by hardware or software when a process or an event needs immediate attention"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    }
+  ]
+}

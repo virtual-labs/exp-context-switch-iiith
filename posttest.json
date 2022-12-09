@@ -1,0 +1,75 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What are the different operations you can perform on a process?",
+      "answers": {
+        "a": "Creation",
+        "b": "Termination",
+        "c": "Execution",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "It is a operation but not the only one that can be performed on  the process",
+        "b": "It is a operation but not the only one that can be performed on  the process",
+        "c": "It is a operation but not the only one that can be performed on  the process",
+        "d": "All above processes can be performed"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "When the process issues an I/O request :",
+      "answers": {
+        "a": "It is placed in the ready queue",
+        "b": "It is left in the CPU",
+        "c": "It is sent to the I/O queue",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Incorrect",
+        "b": "Incorrect",
+        "c": "Process responds to I/O calls by going into the I/O queue to wait for data collection",
+        "d": "Incorrect"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+    ,
+    {
+      "question": "Which of the following state transitions is not possible?",
+      "answers": {
+        "a": "Ready ->CPU",
+        "b": "Ready ->I/O",
+        "c": "I/O->Ready",
+        "d": "CPU->Kill"
+      },
+      "explanations": {
+        "a": "Process can go to CPU from ready queue to push for execution",
+        "b": "Process cant go from ready to I/O directly as the process needs to be in execution to get I/O calls so this state trnsition is not possible",
+        "c": "Process can go directly from I/O queue to ready queue once it collects data",
+        "d": "Process can be terminated from CPU so possible."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+    ,
+    {
+      "question": "Select the method in which a process leaves the CPU:",
+      "answers": {
+        "a": "I/O calls",
+        "b": "Kill process",
+        "c": "preemption",
+        "d": "all of the above"
+      },
+      "explanations": {
+        "a": "Possible but not the only way",
+        "b": "Possible but not the only way",
+        "c": "Possible but not the only way",
+        "d": "All options are possible"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    }
+  ]
+}

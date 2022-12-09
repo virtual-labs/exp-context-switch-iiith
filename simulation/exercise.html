@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Context Switching</title>
+    <link rel="stylesheet" 
+          media="screen and (max-width: 900px)" 
+          href="./dist/small_screen.css">
+    <link rel="stylesheet" 
+          media="screen and (min-width: 901px)" 
+          href="./dist/large_screen.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
+    <link rel="stylesheet" href="./dist/style.css">
+  </head>
+
+  <body>
+    <main>
+      <!-- <p id="instruction"></p> -->
+      <section class="notlog split left">
+        <div class="v-collapsible-instruction-container v-instruction-container">
+          <div id="instruction-title" class="v-collapsible is-size-5">Instructions</div>
+          <div id="daddy" class="v-content" style="text-align: left; padding-left: 10%; padding-right: 10%;">
+            <ul style="list-style: disc;">
+              <li>Click <b>Create</b> to create a process.</li>
+              <li>Click <b>Advance clock</b> to advance the time.</li>
+              <li>To move a process from Ready Pool to the CPU, <b>click on the process</b> that you want to move.</li>
+              <li>Click <b>CPU to IO Pool</b> to move the process currently running in the CPU to the IO pool.</li>
+              <li>Click <b>IO to Ready Pool</b> to move the process with completed IO from IO pool to Ready pool.</li>
+              <li>Click <b>Preempt</b> to preempt the process currently running in the CPU and move it to Ready pool.</li>
+              <li>Click <b>Terminate</b> to terminate the process currently running in the CPU.</li>
+            </ul>
+          </div>
+        </div>
+        <section class="exp">
+          <section class="col_sec">
+            <section class="col_cod">
+              <div class="log-title is-size-5">Color Codes</div>
+              
+              <div>
+                <p class="process green">Pi</p>
+                <p>CPU Process Running</p>
+              </div>
+              <div>
+                <p class="process grey">Pi</p>
+                <p>CPU Process needs Premption</p>
+              </div>
+              <div>
+                <p class="process brown">Pi</p>
+                <p>CPU Process needs IO</p>
+              </div>
+              <div>
+                <p class="process red">Pi</p>
+                <p>CPU Process needs Termination</p>
+              </div>
+              <div>
+                <p class="process blue">Pi</p>
+                <p>Process in Ready Pool</p>
+              </div>
+              <div>
+                <p class="process purple">Pi</p>
+                <p>Process IO in progress</p>
+              </div>
+              <div>
+                <p class="process skyblue">Pi</p>
+                <p>Process IO has completed</p>
+              </div>
+              <div>
+                <p class="process black">Pi</p>
+                <p>Terminated Process</p>
+              </div>
+            </section>
+            <section class="clock">
+              <p style="font-weight:bold ;">Clock</p>
+              <p id="clock_val">0</p>
+            </section>
+          </section>
+          <section id="cpu">
+            <h4 class="queue_head">CPU</h4>
+            <section class="queue_body"></section>
+          </section>
+          <section class="queue" id="io_queue">
+            <h4 class="queue_head">I/O Pool</h4>
+            <section class="queue_body"></section>
+          </section>
+          <section class="queue" id="ready_queue">
+            <h4 class="queue_head">Ready Pool</h4>
+            <section class="queue_body"></section>
+          </section>
+          <section class="queue" id="complete_pool">
+            <h4 class="queue_head">Completed Processes</h4>
+            <section class="queue_body"></section>
+          </section>
+        </section>
+        <p id="instruction"></p>
+        <section class="controls">
+          <button class="button-18" role="button" id="create" title="Create Process and put it in Ready Pool">Create</button>
+          <button class="button-18" role="button" id="advance_clock" title="Advance the Clock">Advance Clock</button>
+          <button class="button-18" role="button" id="goto_io" title="Move the process currently in CPU to IO Pool">CPU to IO Pool</button>
+          <button class="button-18" role="button" id="collect" title="Move the process from IO Pool to Ready Pool">IO to Ready Pool</button>
+          <button class="button-18" role="button" id="prempt" title="Preempt the process currently in CPU and put it in Ready Pool">Preempt</button>
+          <button class="button-18" role="button" id="kill" title="Terminate the Process currently in CPU">Terminate</button>
+        </section>
+        <section class="log split right">
+          <div class="log-title is-size-5">Observations</div>
+          <div id="log"></div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
+    <script src="./dist/exercise.js"></script>
+  <script src="../assets/js/iframeResize.js"></script></body>
+
+</html>

@@ -1,0 +1,152 @@
+html, body, main {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+#instruction {
+    height: 10%;
+    width: 100%;
+    margin: 0px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 148%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.exp {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 10%;
+}
+.row {
+    display: flex;
+    height: 50%;
+    justify-content: space-around;
+}
+.queue, #cpu {
+    height: 40%;
+    width: 25%;
+    border: solid;
+    border-radius: 10px;
+}
+.queue_head {
+    height: 20%;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    /* border-top-right-radius: 4%; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 127%;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    color: white;
+}
+.queue_body {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#cpu .queue_body {
+    height: 60%;
+}
+.process {
+    background-color: #519259;
+    color: white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+.controls {
+    display: inline-block;
+    height: 20%;
+    width: 100%;
+    /* background-color: #0A66C2; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+.col_cod div {
+    display: flex;
+    margin: 5px;
+    /* justify-content: space-between; */
+    gap: 5px;
+    align-items: center;
+}
+.col_sec {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.col_cod {
+    border: 0.25vw solid #97d23d;
+    border-radius: 0.25vw;
+    height: 85%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+.clock {
+    height: 10%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    border: 0.25vw solid #97d23d;
+    border-radius: 0.25vw;
+    font-size:xx-large;
+}
+/* styles for log */
+.split {
+    height: 95%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    width: 79%;
+}
+
+.right {
+    right: 0;
+    width: 20%;
+    padding: 10px 10px;
+    margin: 1vw 0;
+    border: 0.25vw solid #97d23d;
+    border-radius: 0.25vw;
+}
